@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geparcedemy-deployment
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: hello-world
+        image: mendhak/http-https-echo:latest
+        ports:
+        - containerPort: 8080

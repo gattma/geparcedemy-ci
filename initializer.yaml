@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: geparcedemy-initializer-app
+  namespace: argocd
+spec:
+  source:
+    repoURL: https://github.com/gattma/geparcedemy-ci.git
+    targetRevision: master
+    path: appsets/
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: geparcedemy
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true  
+    automated: 
+      prune: true 
+      selfHeal: true
