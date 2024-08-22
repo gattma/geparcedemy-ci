@@ -8,6 +8,6 @@ spec:
     spec:
       containers:
       - name: geparcedemy
-        image: ghcr.io/gattma/geparcedemy:latest
+        image: ghcr.io/gattma/geparcedemy:master-06d37ff
         ports:
         - containerPort: 8080
