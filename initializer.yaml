@@ -4,6 +4,7 @@ metadata:
   name: geparcedemy-initializer-app
   namespace: argocd
 spec:
+  project: default
   source:
     repoURL: https://github.com/gattma/geparcedemy-ci.git
     targetRevision: master
