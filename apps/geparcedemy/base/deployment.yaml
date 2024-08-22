@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-      - name: hello-world
-        image: mendhak/http-https-echo:latest
+      - name: geparcedemy
+        image: ghcr.io/gattma/geparcedemy:latest
         ports:
         - containerPort: 8080
