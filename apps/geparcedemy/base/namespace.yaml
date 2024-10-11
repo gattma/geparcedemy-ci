@@ -3,6 +3,8 @@ kind: Namespace
 metadata:
   annotations:
     gattma: customannoation
+    test: new
   labels:
     gattma: custom
+    test: new
   name: label-test
