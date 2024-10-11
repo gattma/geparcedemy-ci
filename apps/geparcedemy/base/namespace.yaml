@@ -7,4 +7,5 @@ metadata:
   labels:
     gattma: custom
     test: new
+    marko: marko
   name: label-test
